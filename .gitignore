@@ -1,0 +1,45 @@
+# --- 编译产物 (C/C++) ---
+*.exe
+*.o
+*.obj
+*.out
+*.lib
+*.dll
+*.pdb
+*.exe
+
+# --- 项目特有的测试文件 ---
+# 建议不要把包含私密 Key 的 INI 和日志提交到仓库
+bark_notify.ini
+bark_notify.log
+main.py
+
+# --- LLVM/MinGW & 编译器产生的临时文件 ---
+*.a
+*.ilk
+*.exp
+
+# --- PowerShell 测试脚本产生的临时产物 ---
+# 如果你在脚本里动态生成了临时文件
+test_temp/
+
+# --- IDEs & 编辑器 ---
+# Visual Studio
+.vs/
+out/
+build/
+*.sln
+*.vcxproj
+*.user
+
+# VS Code
+.vscode/
+
+# 备份文件
+*.bak
+*.swp
+
+# --- Windows 系统文件 ---
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/

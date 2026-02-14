@@ -1,0 +1,13 @@
+[Unit]
+Description=Bark Notification Service for qBittorrent
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/bark_notify -N "%N" -L "%L" -G "%G" -D "%D" -Z "%Z" -E "completed"
+User=qbittorrent
+Group=qbittorrent
+WorkingDirectory=/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target
